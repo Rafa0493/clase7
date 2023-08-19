@@ -1,99 +1,408 @@
-* { 
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
-}
-html {
-    height: 100%;
 }
 
 body {
-    min-height: 100%;
+    width: 1024px;
+    height: 1024px;
+    background-color: #fff;
 }
 
 .inicio {
-    background-color: #1CD1B0;
-    width: 100%;
+    width: 1024px;
     height: 38px;
+    background: #1CD1B0;
+    flex-shrink: 0;
+    position: relative;
 }
 
-p.texto-descuento {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #000000;
-    font-weight: 400px;
-    font-size: 15px;
-    position: relative;
+.texto-descuento {
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
     top: 10px;
+    right: 886px;
+    bottom: 10px;
     left: 27px;
 }
 
-.navegador {
-    height: 38px;
-    position: relative;
-}
-
 .box-titulo {
-    background-color: #00669F;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9);
-    width: 100%;
+    width: 1024px;
     height: 101px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: #00669F;
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
     position: fixed;
 }
 
 .fijo {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400px;
-    font-size: 40px;    
-    line-height: 46.88px;
-    position: relative;
-    top: 20px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 28px;
+    right: 868px;
+    bottom: 26px;
     left: 28px;
+    z-index: ;
 }
 
-.container {
-    width: 960px;
-    height: 530px;
-    position: absolute;
-    top: 292px;
-    left: 32px;
-
-}
-
+/* aca inicia el contenedor*/
 .contenedor-fondo-batman-1 {
-    position: absolute;
-    bottom: 292px;
-    width: 300px;
-    height: 194px;
+    position: relative;
+    top: 293px;
+    right: 692px;
+    bottom: 538px;
+    left: 32px;
 }
 
+/*primera parte de la tarjeta*/
 .fondo-batman-1 {
     width: 300px;
-    height: 194px;
-    border-radius: 16px 16px 0px 0px;
-    position: relative;
-    }
+    height: 193px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.cora1 {
+    position: absolute;
+    top: 345px;
+    right: 249px;
+    bottom: 687px;
+    left: 383px;
+    z-index: 2;
+}
+
+.cora2 {
+    position: absolute;
+    top: 350px;
+    right: 249px;
+    bottom: 687px;
+    left: 48px;
+    z-index: 2;
+}
+
+.cora3 {
+    position: absolute;
+    top: 340px;
+    right: 249px;
+    bottom: 687px;
+    left: 713px;
+    z-index: 2;
+}
 
 .perfil-batman-1 {
     width: 120px;
     height: 118px;
-    position: relative;
-    bottom: 70px;
-    left: 90px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 128px;
     right: 90px;
-    border-radius: 60px;
-}
+    bottom: 53px;
+    left: 90px;
+    z-index: 1;
+} /* fin primera parte de la tarjeta*/
 
+/*segunda parte de la tarjeta*/
 .contenedor-batman-1 {
     width: 300px;
     height: 336px;
-    position: absolute;
+    flex-shrink: 0;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
     top: 485px;
+    right: 692px;
+    bottom: 203px;
     left: 32px;
-    background-color: #1CD1B0;
+    z-index: 0;
 }
 
 .subtitulo-batman-1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-family: Roboto;
     font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 74px;
+    right: 86px;
+    bottom: 227px;
+    left: 89px;
+}
+
+.texto-batman-1 {
+    width: 267px;
+    height: 113px;
+    flex-shrink: 0;
+    color: #333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 119px;
+    right: 17px;
+    bottom: 104px;
+    left: 16px;
+}
+
+.conten-boton-bat-1 {
+    width: 128.784px;
+    height: 48.523px;
+    background: #00669F;
+    position: absolute;
+    top: 269px;
+    right: 86.22px;
+    bottom: 18.48px;
+    left: 85px;
+}
+
+.boton-batman-1 {
+    color: #F3F3F3;
     text-align: center;
-}   
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+    right: 35.78px;
+    bottom: 15.52px;
+    left: 37px; /* fin segunda parte de la tarjeta*/
+} /* aca termina el contenedor*/
+
+.conten-fondo-harley {
+    position: relative;
+    top: -44px;
+    right: 362px;
+    bottom: 538px;
+    left: 362px;
+}
+
+.fondo-harley {
+    width: 300px;
+    height: 193px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 16px 16px 0px 0px;   
+}
+
+.perfil-harley {
+    width: 120px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 128px;
+    right: 90px;
+    bottom: 53px;
+    left: 90px;
+    z-index: 1;
+}
+
+.contenedor-harley {
+    width: 300px;
+    height: 336px;
+    flex-shrink: 0;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 149px;
+    right: 692px;
+    bottom: 203px;
+    left: 362px;
+    z-index: 0;
+}
+
+.subtitulo-harley {
+    width: 200px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 74px;
+    right: 64px;
+    bottom: 227px;
+    left: 65px;
+}
+
+.texto-harley {
+    width: 267px;
+    height: 113px;
+    flex-shrink: 0;
+    color: #333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 119px;
+    right: 17px;
+    bottom: 104px;
+    left: 16px;
+}
+
+.conten-boton-harley {
+    width: 128.784px;
+    height: 48.523px;
+    background: #00669F;
+    position: absolute;
+    top: 269px;
+    right: 86.22px;
+    bottom: 18.48px;
+    left: 85px;
+}
+
+.boton-harley {
+    color: #F3F3F3;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+    right: 35.78px;
+    bottom: 15.52px;
+    left: 37px; /* fin segunda parte de la tarjeta*/
+}
+
+/* aca inicia el contenedor*/
+.fondo-batman-2 {
+    position: relative;
+    top: -382px;
+    right: 692px;
+    bottom: 538px;
+    left: 690px;
+}
+
+/*primera parte de la tarjeta*/
+.fondo-perfil-batman-2 {
+    width: 300px;
+    height: 193px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.perfil-batman-2 {
+    width: 120px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 128px;
+    right: 90px;
+    bottom: 53px;
+    left: 90px;
+    z-index: 1;
+} /* fin primera parte de la tarjeta*/
+
+/*segunda parte de la tarjeta*/
+.contenedor-batman-2 {
+    width: 300px;
+    height: 336px;
+    flex-shrink: 0;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: -190px;
+    right: 692px;
+    bottom: 203px;
+    left: 690px;
+    z-index: 0;
+}
+
+.subtitulo-batman-2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 74px;
+    right: 86px;
+    bottom: 227px;
+    left: 89px;
+}
+
+.texto-batman-2 {
+    width: 267px;
+    height: 113px;
+    flex-shrink: 0;
+    color: #333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 119px;
+    right: 17px;
+    bottom: 104px;
+    left: 16px;
+}
+
+.conten-boton-batman-2 {
+    width: 128.784px;
+    height: 48.523px;
+    background: #00669F;
+    position: absolute;
+    top: 269px;
+    right: 86.22px;
+    bottom: 18.48px;
+    left: 85px;
+}
+
+.boton-batman-2 {
+    color: #F3F3F3;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+    right: 35.78px;
+    bottom: 15.52px;
+    left: 37px; /* fin segunda parte de la tarjeta*/
+} /* aca termina el contenedor*/
+
+.pie-pagina {
+    width: 1024px;
+    height: 51px;
+    flex-shrink: 0;
+    background: #00669F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+}
+
+.derechos {
+    color: #FFF9F9;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
